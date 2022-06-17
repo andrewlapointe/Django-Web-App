@@ -1,0 +1,35 @@
+#keyboard-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: grid;
+  grid-gap: 5px;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  border: 2px grey;
+  border-radius: 5px;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  text-align: center;
+}
+
+.key:hover {
+  background-color: lightgray;
+}

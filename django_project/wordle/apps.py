@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CookbookConfig(AppConfig):
+class WordleConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'cookbook'
+    name = 'wordle'
