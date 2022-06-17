@@ -5,7 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+
+    {% if page == 'wordle-game' %}
+    <link rel="stylesheet" href="{% static 'wordle/board.css' %}" />
+    <link rel="stylesheet" href="{% static 'wordle/keyboard.css' %}" />
+    <link rel="stylesheet" href="{% static 'wordle/snackbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'wordle/menu.css' %}" />
+    {% elif page == 'wordle-about'%}
+    <link rel="stylesheet" href="{% static 'wordle/about.css' %}" />
+    {% endif %}
+
+    <link rel="stylesheet" href="{% static 'wordle/navbar.css' %}" />
+
+    <title>Weirdle</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="navbar" style="z-index: 10">
+        <a href="{% url 'wordle-home' %}">Home</a>
+        <a href="{% url 'wordle-about' %}">About</a>
+        <!-- <a href=""></a> -->
+        <button
+          onclick="window.location.href='https://www.nytimes.com/games/wordle/index.html';"
+          class="btn"
+          style="z-index: 12"
+        >
+          Original
+        </button>
+      </div>
+    </header>
+    {% block content %} {% endblock %}
+
+    <script src="{% static 'wordle/snackbar.js' %}"></script>
+    <script src="{% static 'wordle/menu.js' %}"></script>
+    <script src="{% static 'wordle/keyboard.js' %}"></script>
+    <script src="{% static 'wordle/secretWords.js' %}"></script>
+  </body>
 </html>
