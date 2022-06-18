@@ -1,4 +1,4 @@
-import secretWords from "dataFiles/secretWords.json" assert { type: "json" };
+import secretWords from "./secretWords.json" assert { type: "json" };
 
 currentTile = 0;
 currentTilePos = 0;
