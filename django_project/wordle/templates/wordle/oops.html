@@ -1,0 +1,33 @@
+{% extends 'wordle/master.html' %} {% block content%}
+<main>
+  <div class="header">
+    <h1>
+      Congradulations! You found the
+      <span class="classy-animation"> "OOPS"</span> page.
+    </h1>
+    <h2>This means you messed up.</h2>
+  </div>
+  <div class="main-text">
+    <p>
+      Maybe you deserve to be here. Maybe not. It is of no consequence. All are
+      equal under the eyes of the great
+      <span class="classy-animation">"OOPS"</span> page. You may wish to leave,
+      but the great <span class="classy-animation">"OOPS"</span> has taken your
+      links. The only way to return to the page you seek is by winning a game.
+      <break>
+      Press the button before you and <span class="classy-animation">"OOPS"</span> may set you free. 
+      But at a cost. Each time you press the button a random person somewhere in the 
+      world will stubb their toe. The choice is yours.
+    </p>
+  </div>
+  <div class='button-container'>
+    <button id='brb' onclick='toeStubbed()'>Button</button>
+  </div>
+  <p id='numOfToes'>Number of toes stubbed: 0</p>
+  <p id='message'></p>
+
+  <button id="take-me-back" 
+          onclick="window.location.href='{% url 'wordle-oops' %}'" 
+          >Take me back</button>
+</main>
+{% endblock %}

@@ -1,0 +1,66 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  margin-top: 100px;
+  font-family: “Comic Sans MS”, “Comic Sans”, cursive;
+}
+
+.button-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* brb -> big round button */
+#brb {
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+#brb:hover {
+  background-color: red;
+}
+
+#take-me-back {
+  margin: auto;
+  font-size: large;
+  visibility: hidden;
+  max-width: 8%;
+}
+.classy-animation {
+  animation: blinking 5s infinite;
+  font-size: 20px;
+}
+@keyframes blinking {
+  0% {
+    color: red;
+  }
+  16.6% {
+    color: orange;
+  }
+  32.3% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66.6% {
+    color: blue;
+  }
+  83.2% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
