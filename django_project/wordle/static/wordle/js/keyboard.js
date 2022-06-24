@@ -4,6 +4,8 @@ currentRow = [];
 idCache = [];
 greenCounter = 0;
 
+// word dictionary, could be better...
+
 const secretWords = [
   "cigar",
   "rebut",
