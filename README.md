@@ -10,7 +10,7 @@ This starts a server which can be accessed through a browser at localhost/8000.
 
 The purpose of creating this app was to further my understanding of web development. I had some experience in HTML, CSS, and JavaScript, but had never built an ap using an eternal framework. As I have experience in python, Django seemed a good place to start.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/kA7cCsbhw60)
 
 # Web Pages
 
@@ -27,8 +27,6 @@ The homepage is where the main game is and is the most important page of the pro
 I wrote the project in VS Code using HTML, CSS, JS, and Django Python.
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 
 - [Django tutorial by Corey Schafer](https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p)
 
