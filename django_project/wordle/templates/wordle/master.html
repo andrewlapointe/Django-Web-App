@@ -22,6 +22,7 @@
 
     <title>Weirdle</title>
   </head>
+
   <body>
     <header>
       <div id="navbar" style="z-index: 10">
@@ -53,9 +54,9 @@
     {% block content %} {% endblock %} {% if page == 'wordle-oops' %}
     <script src="{% static 'wordle/js/oops.js' %}"></script>
     {% else %}
+    <script src="{% static 'wordle/js/keyboard.js' %}"></script>
     <script src="{% static 'wordle/js/snackbar.js' %}"></script>
     <script src="{% static 'wordle/js/menu.js' %}"></script>
-    <script src="{% static 'wordle/js/keyboard.js' %}"></script>
     {% endif %}
   </body>
 </html>
